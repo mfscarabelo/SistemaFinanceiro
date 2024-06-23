@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2024-03-03" view-index="2" gantt-divider-location="458" resource-divider-location="300" version="3.3.3309" locale="pt_BR">
+    <description/>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd3" name="Nome" width="262" order="0"/>
+        <field id="tpd4" name="Data inicial" width="97" order="1"/>
+        <field id="tpd5" name="Data final" width="98" order="2"/>
+        <field id="tpd15" name="Notas" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nome" width="206" order="0"/>
+        <field id="1" name="Função" width="90" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="f102cb1224fa44208014dad234294025" name="Início do Projeto" meeting="false" start="2024-03-04" duration="1" complete="0" thirdDate="2024-03-04" thirdDate-constraint="1" expand="true">
+            <depend id="1" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="1" uid="9913c7ce964f491092e576aacbcf644b" name="Análise do Mercado (Ferramenta OpenDesing)" meeting="false" start="2024-03-11" duration="10" complete="0" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" uid="73396bb01332414da23be3fc9208d298" name="Benchmarking" meeting="false" start="2024-03-25" duration="6" complete="0" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="3" uid="e1b498ea27f04e66ada0aea95b65ac36" name="Definição de Requisitos" meeting="false" start="2024-04-02" duration="7" complete="0" expand="true">
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="4" uid="61b2ebe01e62483bac608efce9fae4ce" name="Abordagem Ágil (Scrum)" meeting="false" start="2024-04-11" duration="6" complete="0" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" uid="51f6d6a42e6e41fb8e7c52f8cc749331" name="Arquitetura do Sistema(Desktop – C#)" meeting="false" start="2024-04-19" duration="11" complete="0" expand="true">
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="6" uid="7e45f98f3ab944ada3ad8793625bbf72" name="Prototipagem de Telas" meeting="false" start="2024-05-06" duration="18" complete="0" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="7" uid="ad5b8b01387a4298a838d66c75a81b1a" name="Testes e Avaliação" meeting="false" start="2024-05-30" duration="9" complete="0" expand="true">
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="8" uid="026098b5c7004f9bab05f9f4bd659bfe" name="Encerramento do Projeto" meeting="false" start="2024-06-12" duration="1" complete="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Mariana" function="Default:1" contacts="" phone=""/>
+        <resource id="1" name="Cliente 1" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="Cliente 2" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="3" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="6" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="3" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
